@@ -369,7 +369,7 @@ header, section {
       .casestudy-single:nth-child(2n+0) .casestudy-single_item__images-mobile {
         top: 86px; }
     .casestudy-single_item__text {
-      width: 490px; }
+      width: 41.66667%; }
       .casestudy-single_item__text .title-item::after {
         border-color: #303030; }
       .casestudy-single_item__text h3 {
@@ -377,7 +377,7 @@ header, section {
       .casestudy-single_item__text p {
         margin: 50px 0 100px; }
     .casestudy-single_item__images {
-      width: 590px;
+      width: 50%;
       height: 656px;
       position: relative; }
       .casestudy-single_item__images-desktop {
@@ -391,7 +391,7 @@ header, section {
       .casestudy-single_item__images-tablet {
         position: absolute;
         top: 86px;
-        left: 201px;
+        left: 33.33333%;
         width: 288px;
         max-height: 490px;
         overflow: hidden;
