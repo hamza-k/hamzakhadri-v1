@@ -1,0 +1,111 @@
+@import "rules";
+
+$cubic-ease-out : cubic-bezier(0, 0.2, 0, 1);
+
+
+.intro {
+  opacity: 1;
+  left: 0;
+  &.ended {
+    opacity: 0;
+    left: 100%;
+    transition: opacity .6s linear 1.6s, left 0s linear 2.2s;
+  }
+  &-logo {
+    opacity: 1;
+    &.ended {
+      opacity: 0;
+      transition: opacity .6s linear 1s;
+    }
+  }
+}
+
+.menu, {
+  transition:  opacity .3s linear, transform .3s $cubic-ease-out ;
+
+  &-closed {
+    transition: opacity .3s linear, transform .3s $cubic-ease-out, right 0s linear .3s;
+  }
+
+  &-primary {
+    &-item {
+      transition: padding-left .3s $cubic-ease-out;
+      &::before {
+        transition: transform .3s $cubic-ease-out;
+      }
+      &:hover {
+        transition: padding-left .3s $cubic-ease-out;
+        &::before {
+          transition: transform .3s $cubic-ease-out;
+        }
+      }
+    }
+  }
+}
+
+.btn {
+  transition: box-shadow .3s $cubic-ease-out, transform .3s $cubic-ease-out;
+  &:hover {
+    transition: box-shadow .3s $cubic-ease-out, transform .3s $cubic-ease-out;
+  }
+}
+
+#menu-burger {
+  .menu-stroke {
+    &-1 {
+      transition: top .3s $cubic-ease-out .3s, transform .3s $cubic-ease-out;
+    }
+    &-2 {
+      transition: opacity 0s linear .3s;
+    }
+    &-3 {
+      transition: bottom .3s $cubic-ease-out .3s, transform .3s $cubic-ease-out;
+    }
+  }
+
+  &.burger-exit {
+    .menu-stroke {
+      &-1 {
+        transition: transform .3s $cubic-ease-out .3s, top .3s $cubic-ease-out;
+      }
+      &-2 {
+        transition: opacity 0s linear .3s;
+      }
+      &-3 {
+        transition: transform .3s $cubic-ease-out .3s
+
+        , bottom .3s $cubic-ease-out;
+      }
+    }
+  }
+}
+
+.aboutme {
+  &-wrapper {
+    p {
+      &::after {
+        transition: transform .3s $cubic-ease-out;
+      }
+      &.triggerred {
+        &::after {
+          transition: transform .3s $cubic-ease-out;
+        }
+      }
+    }
+    button {
+      &.triggerred {
+        transition: transform .3s $cubic-ease-out, opacity .3s linear;
+      }
+    }
+  }
+}
+
+.skills {
+  h2 {
+    &.triggerred {
+      &::after {
+        transition: transform .3s $cubic-ease-out;
+      }
+    }
+  }
+}

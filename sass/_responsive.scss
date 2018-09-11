@@ -1,0 +1,41 @@
+@import "animation";
+
+@media screen and (max-width: 575px) {
+  .wrapper {
+    width: calc(100% - 20px);
+  }
+}
+@media screen and (max-width: 767px) {
+  .wrapper {
+    width: 540px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .wrapper {
+    width: 720px;
+  }
+}
+@media screen and (max-width: 1399px) {
+
+  html {
+    font-size: 12px;
+  }
+
+  .wrapper {
+    width: 960px;
+  }
+
+  #menu-burger {
+    width: 45px;
+    height: 24px;
+  }
+}
+
+@media screen and (min-width: 576px) {}
+@media screen and (min-width: 768px) {}
+@media screen and (min-width: 992px) {}
+@media screen and (min-width: 1400px) {
+  .wrapper {
+    width: 1140px;
+  }
+}

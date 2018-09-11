@@ -1,0 +1,8 @@
+$black : #303030;
+$white : #fbfbfb;
+@mixin shadowcard{
+box-shadow: 0px 5px 13px rgba(0, 0, 0, 0.5);
+}
+@mixin shadowcardhover{
+  box-shadow: 0px 9px 13px rgba(0, 0, 0, 0.5);
+}
