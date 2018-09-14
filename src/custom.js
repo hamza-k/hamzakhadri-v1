@@ -82,6 +82,13 @@ document.addEventListener('DOMContentLoaded', function() {
         //.addIndicators() // add indicators (requires plugin)
         .addTo(controller);
 
+      // .skills .skills-container
+        new ScrollMagic.Scene({triggerElement: ".skills .skills-item"})
+        .setClassToggle(".skills .skills-item", "triggerred") // add class toggle
+        .reverse(false)
+        //.addIndicators() // add indicators (requires plugin)
+        .addTo(controller);
+
   // Anime.JS -- Intro logo
   var morphing_tl = anime({
     targets: '#logo_shapes .polymorph-tl',

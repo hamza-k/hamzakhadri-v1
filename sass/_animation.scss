@@ -1,6 +1,7 @@
 @import "rules";
 
 $cubic-ease-out : cubic-bezier(0, 0.2, 0, 1);
+$cubic-ease-in-out : cubic-bezier(1, 0, 0, 1);
 
 
 .intro {
@@ -107,5 +108,36 @@ $cubic-ease-out : cubic-bezier(0, 0.2, 0, 1);
         transition: transform .3s $cubic-ease-out;
       }
     }
+  }
+
+  &-item {
+    &.triggerred {
+      h4 {
+        transition: transform .3s $cubic-ease-out, opacity .3s $cubic-ease-out;
+      }
+      ul {
+        transition: transform .3s $cubic-ease-out .2s, opacity .3s $cubic-ease-out .2s;
+      }
+    }
+  }
+}
+
+.link {
+  transition: color .3s linear ;
+  &::after {
+    transition: transform .3s $cubic-ease-in-out ;
+  }
+  &:hover{
+    transition: color .3s linear ;
+    &::after{
+      transition: transform .3s $cubic-ease-in-out ;
+    }
+  }
+}
+
+.hoverable {
+  transition: transform .3s $cubic-ease-out;
+  &:hover {
+    transition: transform.3s $cubic-ease-out;
   }
 }
