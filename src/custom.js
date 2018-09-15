@@ -89,6 +89,13 @@ document.addEventListener('DOMContentLoaded', function() {
         //.addIndicators() // add indicators (requires plugin)
         .addTo(controller);
 
+      // background-attachment disabled - Skills
+        new ScrollMagic.Scene({triggerElement: ".aboutme", triggerHook: 0})
+        .setClassToggle(".skills", "attached")
+        .reverse(true)
+        // .addIndicators()
+        .addTo(controller);
+
   // Anime.JS -- Intro logo
   var morphing_tl = anime({
     targets: '#logo_shapes .polymorph-tl',
