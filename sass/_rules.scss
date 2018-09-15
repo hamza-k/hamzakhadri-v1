@@ -92,6 +92,7 @@ header, section {
   color: $white;
   font-size: .95rem;
   transform: scale(1) translateY(0);
+  cursor: pointer;
   @include shadowcard;
 
   &:hover {
@@ -125,11 +126,22 @@ header, section {
   right: 25px;
   z-index: 11;
 
+  &.for-black {
+    .menu-stroke {
+    border-top: solid 1.5pt $white;
+    }
+
+    &.no-more {
+      .menu-stroke {
+        border-top: solid 1.5pt $black;
+      }
+    }
+  }
+
   .menu-stroke {
     width: 100%;
     height: 0;
     border-top: solid 1.5pt $black;
-    border-bottom: solid 1.5pt $white;
     position: absolute;
     &-1 {
       top: 0;
@@ -151,6 +163,8 @@ header, section {
   &.burger-exit {
     .menu-stroke{
       border-bottom: 0;
+      border-top: solid 1.5pt $black !important;
+
       &-1{
         top: 50%;
         transform: rotate(45deg);
@@ -357,6 +371,7 @@ header, section {
       width: 187px;
       transform: translateX(-20px);
       opacity: 0;
+      cursor: pointer;
       svg {
         display: block;
         margin: 0 auto 20px;

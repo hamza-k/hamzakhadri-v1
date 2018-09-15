@@ -49,7 +49,9 @@
   }
 
   .header {
-    background-position: 25% 0;
+    &::before {
+      background-position: 25% 0;
+    }
     &-right {
       width: percentage(2/3);
     }

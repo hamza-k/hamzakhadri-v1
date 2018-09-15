@@ -96,6 +96,20 @@ document.addEventListener('DOMContentLoaded', function() {
         // .addIndicators()
         .addTo(controller);
 
+      // Change color Burger Menu - white
+        new ScrollMagic.Scene({triggerElement: ".aboutme", triggerHook: 0.08})
+        .setClassToggle("#menu-burger", "for-black")
+        .reverse(true)
+        //.addIndicators()
+        .addTo(controller);
+
+      //Change color Burger Menu - black
+      new ScrollMagic.Scene({triggerElement: ".skills", triggerHook: 0.08})
+      .setClassToggle("#menu-burger", "no-more")
+      .reverse(true)
+      //.addIndicators()
+      .addTo(controller);
+
   // Anime.JS -- Intro logo
   var morphing_tl = anime({
     targets: '#logo_shapes .polymorph-tl',
@@ -164,5 +178,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
       }
 
+  // Case studies are coming ?
+  function comingsoon() {
+    alert("Coming soon !");
+  }
+  
   console.log("All's good, Jeffrey")
 });

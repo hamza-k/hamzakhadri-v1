@@ -45,7 +45,7 @@ html {
 a {
   color: inherit;
   text-decoration: none;
-  cursor: pointer; }
+  cursor: pointer !important; }
 
 h1 {
   font-size: 3.2rem;
@@ -143,6 +143,7 @@ header, section {
   color: #fbfbfb;
   font-size: .95rem;
   transform: scale(1) translateY(0);
+  cursor: pointer;
   box-shadow: 0px 5px 13px rgba(0, 0, 0, 0.5); }
   .btn:hover {
     transform: scale(1.02) translateY(-4px);
@@ -164,11 +165,14 @@ header, section {
   top: 50px;
   right: 25px;
   z-index: 11; }
+  #menu-burger.for-black .menu-stroke {
+    border-top: solid 1.5pt #fbfbfb; }
+  #menu-burger.for-black.no-more .menu-stroke {
+    border-top: solid 1.5pt #303030; }
   #menu-burger .menu-stroke {
     width: 100%;
     height: 0;
     border-top: solid 1.5pt #303030;
-    border-bottom: solid 1.5pt #fbfbfb;
     position: absolute; }
     #menu-burger .menu-stroke-1 {
       top: 0;
@@ -183,7 +187,8 @@ header, section {
       transform: rotate(0);
       transform-origin: center; }
   #menu-burger.burger-exit .menu-stroke {
-    border-bottom: 0; }
+    border-bottom: 0;
+    border-top: solid 1.5pt #303030 !important; }
     #menu-burger.burger-exit .menu-stroke-1 {
       top: 50%;
       transform: rotate(45deg); }
@@ -337,7 +342,8 @@ header, section {
       font-size: 1.6rem;
       width: 187px;
       transform: translateX(-20px);
-      opacity: 0; }
+      opacity: 0;
+      cursor: pointer; }
       .aboutme-wrapper button svg {
         display: block;
         margin: 0 auto 20px; }
@@ -641,10 +647,10 @@ header, section {
   .menu-primary {
     left: 50%;
     transform: translate(-50%, -50%); }
-  .header {
+  .header::before {
     background-position: 25% 0; }
-    .header-right {
-      width: 66.66667%; }
+  .header-right {
+    width: 66.66667%; }
   .aboutme-wrapper {
     display: block; }
     .aboutme-wrapper p {
