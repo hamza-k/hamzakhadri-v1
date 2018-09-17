@@ -389,10 +389,6 @@ header, section {
 }
 
 .skills {
-  background-image: url(../img/skills.png);
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: top;
   text-align: center;
 
   &::before {
@@ -670,4 +666,9 @@ header, section {
       fill: $black;
     }
   }
+}
+
+/*--- 000WebHost... ---*/
+div[style="text-align: right;position: fixed;z-index:9999999;bottom: 0; width: 100%;cursor: pointer;line-height: 0;display:block !important;"] {
+  display: none !important;
 }

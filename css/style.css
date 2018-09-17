@@ -354,10 +354,6 @@ header, section {
     fill: #fbfbfb; }
 
 .skills {
-  background-image: url(../img/skills.png);
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: top;
   text-align: center; }
   .skills::before {
     content: '';
@@ -542,6 +538,10 @@ header, section {
     transform: translate(-50%, -50%); }
     .intro-logo svg * {
       fill: #303030; }
+
+/*--- 000WebHost... ---*/
+div[style="text-align: right;position: fixed;z-index:9999999;bottom: 0; width: 100%;cursor: pointer;line-height: 0;display:block !important;"] {
+  display: none !important; }
 
 .intro {
   opacity: 1;
@@ -732,13 +732,13 @@ header, section {
     .skills-item ul li {
       height: 50px; }
   .casestudy {
-    padding: 0; }
+    padding: 100px 0; }
     .casestudy .btn {
       width: 83.33333%;
       margin: 0 auto;
       display: block; }
     .casestudy-single {
-      margin: 100px 0 100px; }
+      margin: 0 0 100px; }
       .casestudy-single_item {
         width: 83.33333%; }
         .casestudy-single_item__images {

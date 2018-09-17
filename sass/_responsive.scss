@@ -217,14 +217,14 @@
   }
 
   .casestudy{
-    padding: 0;
+    padding: 100px 0;
     .btn {
       width: percentage(5/6);
       margin: 0 auto;
       display: block;
     }
     &-single {
-      margin: 100px 0 100px;
+      margin: 0 0 100px;
       &_item {
         width: percentage(5/6);
         &__images{

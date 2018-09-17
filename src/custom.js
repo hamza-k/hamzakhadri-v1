@@ -182,6 +182,9 @@ document.addEventListener('DOMContentLoaded', function() {
   function comingsoon() {
     alert("Coming soon !");
   }
-  
+
+  // 000Webhost...
+  $('*[style="text-align: right;position: fixed;z-index:9999999;bottom: 0; width: 100%;cursor: pointer;line-height: 0;display:block !important;"').hide();
+
   console.log("All's good, Jeffrey")
 });
