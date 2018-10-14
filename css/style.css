@@ -388,7 +388,8 @@ header, section {
       font-size: 1.2rem;
       margin-bottom: 50px;
       transform: translateY(10px);
-      opacity: 0; }
+      opacity: 0;
+      color: #303030; }
     .skills-item ul {
       display: flex;
       flex-wrap: wrap;
@@ -403,6 +404,19 @@ header, section {
         height: 70px; }
         .skills-item ul li .icon-svg_skills {
           height: 100%; }
+        .skills-item ul li.soon {
+          position: relative; }
+          .skills-item ul li.soon::after {
+            content: "Soon";
+            position: absolute;
+            bottom: 10px;
+            right: -20px;
+            color: #303030;
+            background-color: #fbfbfb;
+            font-weight: bold;
+            padding: 5px 7px;
+            font-size: 0.8em;
+            box-shadow: 0px 5px 13px rgba(0, 0, 0, 0.5); }
   .skills h2 {
     position: relative;
     padding-bottom: 80px;
@@ -444,7 +458,8 @@ header, section {
       .casestudy-single_item__text .title-item::after {
         border-color: #303030; }
       .casestudy-single_item__text h3 {
-        font-size: 1.8rem; }
+        font-size: 1.8rem;
+        color: #303030; }
       .casestudy-single_item__text p {
         margin: 50px 0 100px; }
     .casestudy-single_item__images {
@@ -742,7 +757,8 @@ div[style="text-align: right;position: fixed;z-index:9999999;bottom: 0; width: 1
       .casestudy-single_item {
         width: 83.33333%; }
         .casestudy-single_item__images {
-          position: static;
+          position: relative;
+          width: 100%;
           height: auto; }
           .casestudy-single_item__images-desktop {
             position: static;

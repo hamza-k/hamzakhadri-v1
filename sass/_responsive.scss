@@ -211,10 +211,11 @@
       ul {
         li {
           height: 50px;
+          }
         }
       }
     }
-  }
+  
 
   .casestudy{
     padding: 100px 0;
@@ -228,7 +229,8 @@
       &_item {
         width: percentage(5/6);
         &__images{
-          position: static;
+          position: relative;
+          width: 100%;
           height: auto;
           &-desktop {
             position: static;

@@ -441,6 +441,7 @@ header, section {
       margin-bottom: 50px;
       transform: translateY(10px);
       opacity: 0;
+        color: $black;
     }
 
     ul {
@@ -462,8 +463,28 @@ header, section {
             }
           }
         }
+        
+        
+        &.soon {
+          position: relative;
+
+            &::after {
+              content: "Soon";
+              position : absolute;
+              bottom: 10px;
+              right: -20px;
+              color: $black;
+              background-color : $white;
+              font-weight : bold;
+              padding : 5px 7px;
+              font-size: 0.8em;
+              @include shadowcard;
+              }
+        
       }
     }
+  }
+    
   }
 
   h2 {
@@ -491,6 +512,7 @@ header, section {
     fill: $black;
   }
 }
+
 
 .casestudy {
   padding: 150px 0;
@@ -532,6 +554,7 @@ header, section {
 
         h3 {
           font-size: 1.8rem;
+            color: $black;
         }
 
         p {
