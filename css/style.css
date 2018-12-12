@@ -468,7 +468,7 @@ header, section {
       position: relative; }
       .casestudy-single_item__images-desktop {
         position: absolute;
-        width: 390px;
+        width: 66.66667%;
         max-height: 500px;
         overflow: hidden;
         box-shadow: 0px 5px 13px rgba(0, 0, 0, 0.5); }
@@ -478,7 +478,7 @@ header, section {
         position: absolute;
         top: 86px;
         left: 33.33333%;
-        width: 288px;
+        width: 50%;
         max-height: 490px;
         overflow: hidden;
         box-shadow: 0px 5px 13px rgba(0, 0, 0, 0.5); }
@@ -488,7 +488,7 @@ header, section {
         position: absolute;
         right: 0;
         top: 171px;
-        width: 187px;
+        width: 33.33333%;
         max-height: 477px;
         overflow: hidden;
         box-shadow: 0px 5px 13px rgba(0, 0, 0, 0.5); }
@@ -756,25 +756,6 @@ div[style="text-align: right;position: fixed;z-index:9999999;bottom: 0; width: 1
       margin: 0 0 100px; }
       .casestudy-single_item {
         width: 83.33333%; }
-        .casestudy-single_item__images {
-          position: relative;
-          width: 100%;
-          height: auto; }
-          .casestudy-single_item__images-desktop {
-            position: static;
-            max-height: 100%;
-            width: 100%;
-            margin-bottom: 30px; }
-          .casestudy-single_item__images-tablet {
-            position: static;
-            max-height: 100%;
-            width: 100%;
-            margin-bottom: 30px; }
-          .casestudy-single_item__images-mobile {
-            position: static;
-            max-height: 100%;
-            width: 100%;
-            margin-bottom: 30px; }
   .footer-wrapper {
     display: block; }
   .footer-item {
